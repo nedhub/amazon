@@ -1,3 +1,4 @@
+import 'package:amazon/views/Product.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -170,7 +171,41 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 15.0),
+            ProductCarousel(),
+            Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 200,
+                      color: Colors.red,
+                    ),
+                    Container(
+                      height: 200,
+                      width: 190,
+                      color: Colors.pink,
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 200,
+                      width: 200,
+                      color: Colors.orange,
+                    ),
+                    Container(
+                      height: 200,
+                      width: 190,
+                      color: Colors.yellow,
+                    ),
+                  ],
+                )
+              ],
+            ),
           ],
         ));
   }
